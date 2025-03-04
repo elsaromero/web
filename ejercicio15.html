@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Ejercicio 15</title>
+</head>
+<body>
+    <h1>Rellena tu CV</h1>
+    
+    <form action="php/insertar_cv.php" method="post">
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <label for="provincia">Provincia:</label>
+            <select id="provincia" name="provincia">
+                <option value="" selected="selected">- selecciona -</option>
+                <option value="madrid">Madrid</option>
+                <option value="barcelona">Barcelona</option>
+                <option value="valencia">Valencia</option>
+                <option value="sevilla">Sevilla</option>
+            </select>
+        <p>
+            <label for="dia">Fecha de nacimiento:</label>
+            <input type="text" id="dia" name="dia" size="2" maxlength="2" />
+       
+            <label for="mes">de</label>
+            <select id="mes" name="mes">
+                <option value="enero">Enero</option>
+                <option value="febrero">Febrero</option>
+                <option value="marzo">Marzo</option>
+                <option value="abril">Abril</option>
+                <option value="mayo">Mayo</option>
+                <option value="junio">Junio</option>
+                <option value="julio">Julio</option>
+                <option value="agosto">Agosto</option>
+                <option value="septiembre">Septiembre</option>
+                <option value="octubre">Octubre</option>
+                <option value="noviembre">Noviembre</option>
+                <option value="diciembre">Diciembre</option>
+            </select>
+
+            <label for="anio">de</label>
+            <input type="text" id="anio" name="anio" size="4" maxlength="4" />
+        </p>
+
+        
+            <legend>Temas de interés</legend>
+            <select name="temas_interes" id="temas_interes" size="6" multiple="multiple">
+                <option value="bd">Administración de bases de datos</option>
+                <option value="analisis">Análisis y programación</option>
+                <option value="arquitectura">Arquitectura</option>
+                <option value="calidad">Calidad</option>
+                <option value="erp">ERP, CRM, Business Intelligence</option>
+            </select>
+       </fieldset>
+
+    </form>
+    <p><a href="index.html">Volver a la lista de ejercicios</a></p>
+
+</body>
+</html>
