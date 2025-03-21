@@ -1,20 +1,30 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Sitio</title>
-    <link rel="shortcut icon" href="C:\xampp\htdocs\DS\ejercicio 6 y 7\imagenes\favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="piña.png" type="image/x-icon">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>Ejercicio 6</title>
+  <style type="text/css">
+    div#paginacion {
+      border: 1px solid #CCC; /* Establece un borde gris claro alrededor del contenedor */
+      background-color: #E0E0E0; /* Fondo gris claro para el contenedor */
+      padding: .5em; /* Relleno de 0.5em alrededor del contenido */
+    }
+    .derecha {
+      float: right; /* Hace que el contenido con esta clase se alinee a la derecha */
+    }
+    .izquierda {
+      float: left; /* Hace que el contenido con esta clase se alinee a la izquierda */
+    }
+    div.clear {
+      clear: both; /* Se asegura de que cualquier contenido posterior no se mezcle con los elementos flotantes */
+    }
+  </style>
 </head>
 <body>
-
-    <h1>Mi Sitio</h1>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis posuere justo. Nam vel neque. Proin sagittis mauris at amet nisl. Sed posuere. Aliquam vitae justo.</p>
-
-    <h2>Últimos proyectos</h2>
-
-    <p>Etiam consectetur, mauris vitae cursus scelerisque, dui turpis dignissim justo, et euismod enim odio sit amet erat.</p>
-
-    <p><a href="indicep.html">Acceder a los últimos proyectos de Mi Sitio</a></p>
+  <div id="paginacion">
+    <span class="izquierda">&laquo; Anterior</span>
+    <span class="derecha">Siguiente &raquo;</span>
+    <div class="clear"></div>
+  </div>
+</body>
+</html>

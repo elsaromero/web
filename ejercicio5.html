@@ -3,15 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sintaxis de la etiqueta blockquote</title>
+    <title>Ejercicio 5</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /*------------------------------------------------------------General*/
+        body {
+            font-family: Arial, sans-serif;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .clear {
+            clear: both;
+        }
+        img {
+            border: none;
+        }
+
+        /*------------------------------------------------------------Layout*/
+        #contenedor {
+            width: 90%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        #cabecera {
+            clear: both;
+            padding: 1em;
+        }
+        #menu {
+            clear: both;
+            padding: .5em;
+            margin-bottom: .5em;
+            border-bottom: 1px solid #004C99;
+            background: #003366;
+            color: white;
+        }
+        #lateral {
+            float: left;
+            width: 18%;
+        }
+        #contenido {
+            float: right;
+            width: 79%;
+        }
+        #contenido #principal {
+            float: left;
+            width: 73%;
+        }
+        #contenido #secundario {
+            float: right;
+            width: 20%;
+            border: 1px solid #CC6600;
+            background: #DB905C;
+            padding: .5em;
+        }
+        #pie {
+            clear: both;
+            padding: .5em 0;
+            margin-top: 1em;
+            border-top: 1px solid #C5C5C5;
+            border-bottom: 1px solid #C5C5C5;
+            background: #F8F8F8;
+        }
+
+        /*------------------------------------------------------------Contenido*/
+        #lateral #noticias {
+            padding: .5em;
+            border: 1px solid #C5C5C5;
+            background: #F8F8F8;
+        }
+        #lateral #publicidad {
+            margin-top: 1em;
+            padding: .5em;
+            border: 1px dashed #CC6600;
+            background: #FFF6CD;
+        }
+        #contenido #secundario h2 {
+            background: #DB905C;
+            padding: .2em;
+        }
+    </style>
 </head>
 <body>
-<h1>Sintaxis de la etiqueta &lt;blockquote&gt;</h1>
-<p>La sintaxis de la etiqueta <code>&lt;blockquote&gt;</code> se muestra a continuación:</p>
-<pre>
-&lt;blockquote cite="...dirección original de la cita..."&gt; Texto que
-se cita &lt;/blockquote&gt;
-</pre>
-<a href="index.html">Volver a la lista de ejercicios</a>
+
+<div id="contenedor">
+    <div id="cabecera">
+        <h1>Logotipo</h1>
+    </div>
+
+    <div id="menu">
+        <p>Menú de navegación</p>
+    </div>
+
+    <div id="lateral">
+        <div id="noticias">
+            <h2>Noticias</h2>
+            <ul>
+                <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                <li><a href="#">Consectetur adipiscing elit</a></li>
+                <li><a href="#">Donec interdum nec turpis</a></li>
+                <li><a href="#">Suspendisse potenti</a></li>
+            </ul>
+        </div>
+        <div id="publicidad">
+            <h2>Donec arcu purus</h2>
+            <p>Etiam fermentum, nisl tincidunt blandit interdum, massa velit posuere dolor, sed euismod sem odio at mi.
+
+                Duis porta placerat arcu. Nullam felis pede, commodo vel, suscipit a, molestie vel, felis. Maecenas mattis est vel est..</p>
+        </div>
+    </div>
+
+    <div id="contenido">
+        <div id="principal">
+            <div class="articulo">
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+                <img src="imagen.jpg" alt="Imagen">
+                <p>Nullam est lacus, suscipit ut, dapibus quis, condimentum ac, risus. Vivamus vestibulum, ipsum sollicitudin faucibus pharetra, dolor metus fringilla dui, vel aliquet pede diam tempor tortor.
+
+                    Vestibulum pulvinar urna et quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam vel turpis vitae dui imperdiet laoreet. Quisque eget ipsum.
+                    
+                    Donec commodo, turpis vel venenatis sollicitudin, quam ante convallis justo, sed eleifend justo lectus quis sapien. Ut consequat libero eget est..</p>
+                <a href="#">Seguir leyendo...</a>
+            </div>
+            <div class="articulo">
+                <h2>Vivamus lobortis turpis ac ante fringilla faucibus</h2>
+                <p>Quisque eget ipsum. Donec commodo, turpis vel venenatis sollicitudin, quam ante convallis justo, sed eleifend justo lectus quis sapien. Ut consequat libero eget est.
+
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam dictum hendrerit neque. Mauris id ligula non elit mattis semper. Fusce arcu ipsum, tempus eget, tincidunt at, imperdiet in, mi.
+                    
+                    Sed fermentum cursus dolor. Aenean a diam. Phasellus feugiat. Donec tempor dignissim sem.</p>
+                <a href="#">Seguir leyendo...</a>
+            </div>
+        </div>
+
+        <div id="secundario">
+            <h2>Phasellus blandit</h2>
+            <p>Praesent sodales imperdiet augue. Mauris lorem felis, semper eu, tincidunt eu, sollicitudin eget, sem. Nulla facilisi. Morbi ut enim ut enim ultricies dapibus.</p>
+        </div>
+
+        <div id="secundario">
+            <h2>Nullam vel turpis</h2>
+            <p>Donec commodo, turpis vel venenatis sollicitudin, quam ante convallis justo, sed eleifend justo lectus quis sapien. Ut consequat libero eget est.</p>
+        </div>
+    </div>
+
+    <div id="pie">
+        <p>Pie de página</p>
+    </div>
+</div>
+
 </body>
 </html>

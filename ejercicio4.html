@@ -1,25 +1,290 @@
 <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+       <link rel="stylesheet" type="text/css" href="pagina_completa_estilos.css" title="style" />
+    <title>ejercicio 4</title>
+    <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Características de los planetas</title>
-</head>
-<body>
-    <h1>Características de los planetas</h1>
+    <title>Ejercicio 3 - CSS</title>
+    <style>
 
-    <pre>
-Nombre       Diámetro relativo  Período orbital   Número de lunas
------------------------------------------------------------------
-Mercurio     0,382             0,24 años         0
-Venus        0,949             0,62 años         0
-Tierra       1,000             1,00 años         1
-Marte        0,532             1,88 años         2
-Júpiter      11,209            11,86 años        52
-Saturno      9,449             29,46 años        52
-Urano        4,014             84,01 años        27
-Neptuno      3,883             164,80 años       13
-    </pre>
-    <a href="index.html">Volver a la lista de ejercicios</a>
+
+body {
+
+    /* Add global body styles here if needed */
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  h1, h2, h3, p, form {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .clear {
+    clear: both;
+  }
+  
+  img {
+    border: none;
+  }
+  
+  /*------------------------------------------------------------Layout------------------------------------------------------------*/
+  #contenedor {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  #cabecera, #menu, #lateral, #contenido, #contenido #principal, #contenido #secundario, #pie {
+    padding: .5em;
+  }
+  
+  #cabecera {
+    clear: both;
+    padding: 1em;
+  }
+  
+  #menu {
+    clear: both;
+    padding: .9em;
+    margin-bottom: .6em;
+    border-bottom: 2px solid #004C99;
+  }
+  
+  #lateral {
+    float: left;
+    width: 18%;
+  }
+  
+  #contenido {
+    float: right;
+    width: 79%;
+    padding: 0;
+  }
+  
+  #contenido #principal {
+    float: left;
+    width: 73%;
+  }
+  
+  #contenido #secundario {
+    float: right;
+    width: 20%;
+  }
+  
+  #pie {
+    clear: both;
+    padding: .5em 0;
+    margin-top: 1em;
+    border-top: 1px solid #C5C5C5;
+    border-bottom: 1px solid #C5C5C5;
+  }
+  
+  /*------------------------------------------------------------Enlaces------------------------------------------------------------*/
+  /* Add styles for links here if needed */
+  
+  /*------------------------------------------------------------Secciones------------------------------------------------------------*/
+  /* Cabecera */
+  #cabecera #logo {
+    float: left;
+  }
+  
+  #cabecera #buscador {
+    float: right;
+  }
+  
+  /* Menu */
+  #menu ul#menu_principal {
+    /* Add styles for the menu if needed */
+  }
+  
+  #menu ul#menu_principal li {
+    display: inline;
+    float: left;
+  }
+  
+  /* Contenidos */
+  #contenido #principal .articulo img {
+    width: 100px;
+    float: left;
+    margin: .5em;
+  }
+  
+  #contenido #principal .articulo {
+    margin-bottom: 1em;
+    border-bottom: thick solid #E5E5E5;
+  }
+  
+  /* Secundario */
+  #contenido #secundario {
+    border: 1px solid #CC6600;
+  }
+  
+  /* Lateral */
+  #lateral #publicidad {
+    margin-top: 1em;
+    padding: .5em;
+    border: 1px dashed #CC6600;
+  }
+  
+  #lateral #noticias {
+    padding: .5em;
+    border: 1px solid #C5C5C5;
+  }
+  
+  /* Pie */
+  #pie .enlaces {
+    float: left;
+  }
+  
+  #pie .copyright {
+    float: right;
+  }
+  </style>
+  </head>
+<body>
+  <!-- Contenedor -->
+<div id="contenedor">
+
+    <!-- Cabecera -->
+    <div id="cabecera">
+        <div id="logo">
+            <h1><span>LOGOTIPO</span></h1>
+        </div>
+
+        <div id="buscador">
+            <form action="#" method="post">
+                Buscar &nbsp; <input name="busqueda" type="text" />
+            </form>
+        </div>
+
+        <div></div>
+    </div>
+    <!-- /Cabecera -->
+
+    <!-- Menu principal -->
+    <div id="menu">
+        <ul id="menu_principal">
+
+            <li><a href="LoremIpsumDolorSitAmet">LoremIpsumDolorSitAmet</a></li>
+
+        </ul>
+        <div></div>
+    </div>
+    <br/>
+
+    <!-- Lateral -->
+    <div id="lateral">
+
+        <!-- Noticias -->
+        <div id="noticias">
+            <h3><a href="#">Noticias</a></h3>
+            <p><span>dd/mm/aaaa</span> <a href="#">Lorem ipsum dolor sit amet</a></p>
+            <p><span>dd/mm/aaaa</span> <a href="#">Consectetuer adipiscing elit</a></p>
+            <p><span>dd/mm/aaaa</span> <a href="#">Donec molestie nunc eu sapien</a></p>
+            <p><span>dd/mm/aaaa</span> <a href="#">Maecenas aliquam dolor eget metus</a></p>
+            <p><span>dd/mm/aaaa</span> <a href="#">Fusce tristique lorem id metus</a></p>
+
+            
+        </div>
+        <!-- /Noticias -->
+
+        <!-- Publicidad -->
+        <div id="Donec areus purum">
+            <h3><a href="Donec areu purum">Donec areus purum</a></h3>
+            <p>Etiam fermentum, nisl tincidunt blandit interdum, massa velit posuere dolor, sed euismod sem odio at mi.</p>
+            <p>Duis porta placerat arcu. Nullam felis pede, commodo vel, suscipit a, molestie vel, felis. Maecenas mattis est vel est.</p>
+            <p><a href="#">Seguir leyendo...</a></p>
+        </div>
+        <!-- /Publicidad -->
+
+    </div>
+    <!-- /Lateral -->
+
+<div id="contenido">
+
+    <!-- Principal -->
+    <div id="principal">
+
+        <div>
+            <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h2>
+
+            <img src="imagenes/imagen.png" alt="Imagen genérica" />
+
+            <p>Nullam est lacus, suscipit ut, dapibus quis, condimentum ac, risus. Vivamus vestibulum, ipsum sollicitudin faucibus pharetra, dolor metus fringilla dui, vel aliquet pede diam tempor tortor.</p>
+            <p>Vestibulum pulvinar urna et quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam vel turpis vitae dui imperdiet laoreet. Quisque eget ipsum.</p>
+            <p>Donec commodo, turpis vel venenatis sollicitudin, quam ante convallis justo, sed eleifend justo lectus quis sapien. Ut consequat libero eget est.</p>
+            <p><a href="#">Seguir leyendo...</a></p>
+        </div>
+
+        <div>
+            <h2>Vivamus lobortis turpis ac ante fringilla faucibus</h2>
+
+            <img src="imagenes/imagen.png" alt="Imagen genérica" />
+
+            <p>Quisque eget ipsum. Donec commodo, turpis vel venenatis sollicitudin, quam ante convallis justo, sed eleifend justo lectus quis sapien. Ut consequat libero eget est.</p>
+            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam dictum hendrerit neque. Mauris id ligula non elit mattis semper. Fusce arcu ipsum, tempus eget, tincidunt at, imperdiet in, mi.</p>
+            <p>Sed fermentum cursus dolor. Aenean a diam. Phasellus feugiat. Donec tempor dignissim sem.</p>
+            <p><a href="#">Seguir leyendo...</a></p>
+        </div>
+
+    </div>
+    <!-- /Principal -->
+
+    <!-- Secundario -->
+    <div id="secundario">
+        <h2>Phasellus blandit</h2>
+        <p>Praesent sodales imperdiet augue. Mauris lorem felis, semper eu, tincidunt eu, sollicitudin eget, sem. Nulla facilisi. Morbi ut enim ut enim ultricies dapibus.</p>
+        <p><a href="#">Seguir leyendo...</a></p>
+
+        <h2>Nullam vel turpis</h2>
+        <p>Donec commodo, turpis vel venenatis sollicitudin, quam ante convallis justo, sed eleifend justo lectus quis sapien. Ut consequat libero eget est.</p>
+        <p><a href="#">Seguir leyendo...</a></p>
+    </div>
+    <!-- /Secundario -->
+
+    </div>
+    <!-- /Contenido -->
+
+    <div></div>
+
+    <!-- Pie -->
+    <div id="pie">
+        <span>
+            <a href="#">Nulla</a> |
+            <a href="#">Pharetra</a> |
+            <a href="#">Luctus</a> |
+            <a href="#">Ipsum</a> |
+            <a href="#">Proin</a> |
+            <a href="#">Placerat</a>
+        </span>
+
+        <span>
+            &copy; Copyright Lorem ipsum
+        </span>
+        <div></div>
+    </div>
+    <!-- /Pie -->
+
+</div>
+<!-- /Contenedor -->
+
 </body>
 </html>
+

@@ -1,23 +1,332 @@
 <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+       <link rel="stylesheet" type="text/css" href="pagina_completa_estilos.css" title="style" />
+    <title>EJERCICIO 3</title>
+    <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Ártico y su hielo marino</title>
+    <title>Ejercicio 3 - CSS</title>
+    <style>
+       /* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+#contenedor {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Cabecera */
+#cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background: #f4f4f4;
+    border-bottom: 2px solid ;
+}
+
+#cabecera #logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#cabecera #buscador input {
+    padding: 5px;
+}
+
+/* Menú */
+#menu {
+    background: #ddd;
+    padding: 0.5em;
+}
+
+#menu ul {
+    display: flex;
+}
+
+#menu ul li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Layout */
+#lateral {
+    float: left;
+    width: 25%;
+    background: #f9f9f9;
+    padding: 1em;
+    border-right: 2px solid #777;
+}
+
+#contenido {
+    float: left;
+    width: 73%;
+    padding: 1em;
+}
+
+#contenido #principal {
+    float: left;
+    width: 70%;
+}
+
+#contenido #secundario {
+    float: right;
+    width: 28%;
+}
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+}
+
+/* Contenedor principal */
+#contenedor {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Cabecera */
+#cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #f4f4f4;
+    border-bottom: 2px solid #777;
+}
+
+#logo h1 {
+    font-size: 24px;
+}
+
+#buscador input {
+    padding: 5px;
+}
+
+/* Menú */
+#menu {
+    background: #ddd;
+    padding: 10px;
+}
+
+#menu ul {
+    display: flex;
+}
+
+#menu ul li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Layout */
+#contenido {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+#lateral {
+    width: 25%;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+#principal {
+    width: 50%;
+    padding: 10px;
+}
+
+#secundario {
+    width: 25%;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+/* Artículos */
+.articulo {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #777;
+}
+
+.articulo img {
+    float: left;
+    margin-right: 10px;
+    width: 100px;
+}
+
+/* Pie de página */
+#pie {
+    clear: both;
+    text-align: center;
+    padding: 10px;
+    background: #ddd;
+    margin-top: 10px;
+}
+
+    </style>
+</head>
 </head>
 <body>
-    <h1>El Ártico ha perdido el 14% de su hielo marino perenne en un solo año</h1>
+    
+<!-- Contenedor -->
+<div id="contenedor">
 
-    <p><b>WASHINGTON.-</b> El hielo perenne del Ártico se redujo en un 14% durante el último año, al perder <b>720.000 kilómetros cuadrados</b>, una superficie superior a la Península Ibérica, según datos de la <b>NASA</b>.</p>
+    <!-- Cabecera -->
+    <div id="cabecera">
+        <div id="logo">
+            <h1><span>LOGOTIPO</span></h1>
+        </div>
 
-    <p>Según el <b>JPL</b>, la pérdida del hielo perenne, que debiera mantenerse durante todo el verano, fue todavía mayor y se acercó a un 50% en el momento en que este hielo se desplazaba desde el Ártico oriental hacia el océano.</p>
+        <div id="buscador">
+            <form action="#" method="post">
+                Buscar &nbsp; <input name="busqueda" type="text" />
+            </form>
+        </div>
 
-    <p><b>Son Nghiem</b>, investigador del <b>JPL</b>, ha declarado que:</p>
+        <div></div>
+    </div>
+    <!-- /Cabecera -->
 
-    <blockquote>
-        "Los cambios registrados en estos años en el hielo ártico son rápidos y espectaculares. De mantenerse la situación, están teniendo un impacto profundo en el ambiente, así como en el transporte marino y el comercio."
-    </blockquote>
+    <!-- Menu principal -->
+    <div id="menu">
+        <ul id="menu_principal">
+            <li><a href="LoremIpsumDolorSitAmet">LoremIpsumDolorSitAmet</a></li>
 
-    <a href="index.html">Volver a la lista de ejercicios</a>
+        </ul>
+        <div></div>
+    </div>
+    <br/>
+
+    <!-- Lateral -->
+    <div id="lateral">
+
+        <!-- Noticias -->
+        <div id="noticias">
+            <h3><a href="#">Noticias</a></h3>
+            <p><span>dd/mm/aaaa</span> <a href="#">Lorem ipsum dolor sit amet</a></p>
+            <p><span>dd/mm/aaaa</span> <a href="#">Consectetuer adipiscing elit</a></p>
+            <p><span>dd/mm/aaaa</span> <a href="#">Donec molestie nunc eu sapien</a></p>
+            <p><span>dd/mm/aaaa</span> <a href="#">Maecenas aliquam dolor eget metus</a></p>
+            <p><span>dd/mm/aaaa</span> <a href="#">Fusce tristique lorem id metus</a></p>
+
+            
+        </div>
+        <!-- /Noticias -->
+
+        <!-- Publicidad -->
+        <div id="Donec areus purum">
+            <h3><a href="Donec areu purum">Donec areus purum</a></h3>
+            <p>Etiam fermentum, nisl tincidunt blandit interdum, massa velit posuere dolor, sed euismod sem odio at mi.</p>
+            <p>Duis porta placerat arcu. Nullam felis pede, commodo vel, suscipit a, molestie vel, felis. Maecenas mattis est vel est.</p>
+            <p><a href="#">Seguir leyendo...</a></p>
+        </div>
+        <!-- /Publicidad -->
+
+    </div>
+    <!-- /Lateral -->
+
+<div id="contenido">
+
+    <!-- Principal -->
+    <div id="principal">
+
+        <div>
+            <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h2>
+
+            <img src="imagenes/imagen.png" alt="Imagen genérica" />
+
+            <p>Nullam est lacus, suscipit ut, dapibus quis, condimentum ac, risus. Vivamus vestibulum, ipsum sollicitudin faucibus pharetra, dolor metus fringilla dui, vel aliquet pede diam tempor tortor.</p>
+            <p>Vestibulum pulvinar urna et quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam vel turpis vitae dui imperdiet laoreet. Quisque eget ipsum.</p>
+            <p>Donec commodo, turpis vel venenatis sollicitudin, quam ante convallis justo, sed eleifend justo lectus quis sapien. Ut consequat libero eget est.</p>
+            <p><a href="#">Seguir leyendo...</a></p>
+        </div>
+
+        <div>
+            <h2>Vivamus lobortis turpis ac ante fringilla faucibus</h2>
+
+            <img src="imagenes/imagen.png" alt="Imagen genérica" />
+
+            <p>Quisque eget ipsum. Donec commodo, turpis vel venenatis sollicitudin, quam ante convallis justo, sed eleifend justo lectus quis sapien. Ut consequat libero eget est.</p>
+            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam dictum hendrerit neque. Mauris id ligula non elit mattis semper. Fusce arcu ipsum, tempus eget, tincidunt at, imperdiet in, mi.</p>
+            <p>Sed fermentum cursus dolor. Aenean a diam. Phasellus feugiat. Donec tempor dignissim sem.</p>
+            <p><a href="#">Seguir leyendo...</a></p>
+        </div>
+
+    </div>
+    <!-- /Principal -->
+
+    <!-- Secundario -->
+    <div id="secundario">
+        <h2>Phasellus blandit</h2>
+        <p>Praesent sodales imperdiet augue. Mauris lorem felis, semper eu, tincidunt eu, sollicitudin eget, sem. Nulla facilisi. Morbi ut enim ut enim ultricies dapibus.</p>
+        <p><a href="#">Seguir leyendo...</a></p>
+
+        <h2>Nullam vel turpis</h2>
+        <p>Donec commodo, turpis vel venenatis sollicitudin, quam ante convallis justo, sed eleifend justo lectus quis sapien. Ut consequat libero eget est.</p>
+        <p><a href="#">Seguir leyendo...</a></p>
+    </div>
+    <!-- /Secundario -->
+
+    </div>
+    <!-- /Contenido -->
+
+    <div></div>
+
+    <!-- Pie -->
+    <div id="pie">
+        <span>
+            <a href="#">Nulla</a> |
+            <a href="#">Pharetra</a> |
+            <a href="#">Luctus</a> |
+            <a href="#">Ipsum</a> |
+            <a href="#">Proin</a> |
+            <a href="#">Placerat</a>
+        </span>
+
+        <span>
+            &copy; Copyright Lorem ipsum
+        </span>
+        <div></div>
+    </div>
+    <!-- /Pie -->
+
+</div>
+<!-- /Contenedor -->
+
 </body>
 </html>
