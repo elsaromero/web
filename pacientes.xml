@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="pacientes.xsl"?>
+<Patient_Report>
+  <Patient><PatientID>01</PatientID><Name>Ana</Name><sex>F</sex><Birth_Date>19840512</Birth_Date><Age>41</Age><Weigth>060</Weigth></Patient>
+  <Patient><PatientID>02</PatientID><Name>Luis</Name><sex>M</sex><Birth_Date>19781230</Birth_Date><Age>47</Age><Weigth>080</Weigth></Patient>
+  <Patient><PatientID>03</PatientID><Name>Lucia</Name><sex>F</sex><Birth_Date>19920704</Birth_Date><Age>32</Age><Weigth>057</Weigth></Patient>
+  <Patient><PatientID>04</PatientID><Name>Pedro</Name><sex>M</sex><Birth_Date>19951123</Birth_Date><Age>29</Age><Weigth>074</Weigth></Patient>
+  <Patient><PatientID>05</PatientID><Name>Laura</Name><sex>F</sex><Birth_Date>19800117</Birth_Date><Age>45</Age><Weigth>065</Weigth></Patient>
+  <Patient><PatientID>06</PatientID><Name>Jorge</Name><sex>M</sex><Birth_Date>19990311</Birth_Date><Age>26</Age><Weigth>077</Weigth></Patient>
+  <Patient><PatientID>07</PatientID><Name>Sofia</Name><sex>F</sex><Birth_Date>20000101</Birth_Date><Age>25</Age><Weigth>061</Weigth></Patient>
+  <Patient><PatientID>08</PatientID><Name>Raul</Name><sex>M</sex><Birth_Date>19871119</Birth_Date><Age>37</Age><Weigth>085</Weigth></Patient>
+  <Patient><PatientID>09</PatientID><Name>Paula</Name><sex>F</sex><Birth_Date>19951008</Birth_Date><Age>29</Age><Weigth>059</Weigth></Patient>
+  <Patient><PatientID>10</PatientID><Name>Victor</Name><sex>M</sex><Birth_Date>19981212</Birth_Date><Age>26</Age><Weigth>073</Weigth></Patient>
+  <Patient><PatientID>11</PatientID><Name>Marta</Name><sex>F</sex><Birth_Date>20010425</Birth_Date><Age>23</Age><Weigth>062</Weigth></Patient>
+  <Patient><PatientID>12</PatientID><Name>Andres</Name><sex>M</sex><Birth_Date>19860303</Birth_Date><Age>39</Age><Weigth>079</Weigth></Patient>
+  <Patient><PatientID>13</PatientID><Name>Nuria</Name><sex>F</sex><Birth_Date>19990202</Birth_Date><Age>26</Age><Weigth>064</Weigth></Patient>
+  <Patient><PatientID>14</PatientID><Name>Fernando</Name><sex>M</sex><Birth_Date>19910409</Birth_Date><Age>34</Age><Weigth>082</Weigth></Patient>
+  <Patient><PatientID>15</PatientID><Name>Clara</Name><sex>F</sex><Birth_Date>19821129</Birth_Date><Age>42</Age><Weigth>058</Weigth></Patient>
+</Patient_Report>
